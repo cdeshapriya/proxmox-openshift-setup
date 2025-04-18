@@ -1,53 +1,53 @@
 ---
 bootstrap:
   name: bootstrap
-  ip: 192.168.2.189
+  ip: 192.168.10.119
   macaddr: 7A:00:00:00:03:07
-  cores: 4
+  cores: 8
   ram: 16384
-  vmid: 407
+  vmid: 119 
 masters:
-  - ip: 192.168.2.190
+  - ip: 192.168.10.120
     name: master0
     macaddr: 7A:00:00:00:03:01
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 401
-  - ip: 192.168.2.191
+    vmid: 120
+  - ip: 192.168.10.121
     name: master1
     macaddr: 7A:00:00:00:03:02
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 402
-  - ip: 192.168.2.192
+    vmid: 121
+  - ip: 192.168.10.122
     name: master2
     macaddr: 7A:00:00:00:03:03
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 403
+    vmid: 122
 workers:
-  - ip: 192.168.2.193
+  - ip: 192.168.20.123
     name: worker0
     macaddr: 7A:00:00:00:03:04
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 404
-  - ip: 192.168.2.194
+    vmid: 123
+  - ip: 192.168.10.124
     name: worker1
     macaddr: 7A:00:00:00:03:05
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 405
-  - ip: 192.168.2.195
+    vmid: 124
+  - ip: 192.168.10.125
     name: worker2
     macaddr: 7A:00:00:00:03:06
-    cores: 4
+    cores: 8
     ram: 16384
-    vmid: 406
+    vmid: 125
 service:
   name: okd-service
-  ip: 192.168.2.196
+  ip: 192.168.10.126
   macaddr: 7A:00:00:00:03:08
-  cores: 4
+  cores: 8
   ram: 16384
-  vmid: 400
+  vmid: 126
