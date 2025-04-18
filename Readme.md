@@ -45,14 +45,14 @@ So I'm chosing 7A (1111010) for the first byte. All my labs that require a priva
 
 | Name | IP | Mac Address | Role | OS | PXE Boot |
 |------|---------------|--------------------|------------------------------------|---------------------|-----|
-| master0 | 192.168.2.190 | 7A:00:00:00:03:01 | Control plane node #1 | FCOS | Yes |
-| master1 | 192.168.2.191 | 7A:00:00:00:03:02 | Control plane node #2 | FCOS | Yes |
-| master2 | 192.168.2.192 | 7A:00:00:00:03:03 | Control plane node #3 | FCOS | Yes |
-| worker0 | 192.168.2.193 | 7A:00:00:00:03:04 | Worker node #1 | FCOS | Yes |
-| worker1 | 192.168.2.194 | 7A:00:00:00:03:05 | Worker node #2 | FCOS | Yes |
-| worker2 | 192.168.2.195 | 7A:00:00:00:03:06 | Worker node #3 | FCOS| Yes |
-| bootstrap | 192.168.2.189 | 7A:00:00:00:03:07 | Bootstrap, needed to start the cluster | FCOS | Yes |
-| service | 192.168.2.196 | 7A:00:00:00:03:08 | DNS, DHCP, Load balancer, web server | Ubuntu 20/CentOS | No |
+| master0 | 192.168.10.120 | 7A:00:00:00:03:01 | Control plane node #1 | FCOS | Yes |
+| master1 | 192.168.10.121 | 7A:00:00:00:03:02 | Control plane node #2 | FCOS | Yes |
+| master2 | 192.168.10.122 | 7A:00:00:00:03:03 | Control plane node #3 | FCOS | Yes |
+| worker0 | 192.168.10.123 | 7A:00:00:00:03:04 | Worker node #1 | FCOS | Yes |
+| worker1 | 192.168.10.124 | 7A:00:00:00:03:05 | Worker node #2 | FCOS | Yes |
+| worker2 | 192.168.10.125 | 7A:00:00:00:03:06 | Worker node #3 | FCOS| Yes |
+| bootstrap | 192.168.10.119 | 7A:00:00:00:03:07 | Bootstrap, needed to start the cluster | FCOS | Yes |
+| service | 192.168.10.126 | 7A:00:00:00:03:08 | DNS, DHCP, Load balancer, web server | Ubuntu 20/CentOS | No |
 
 The `hosts.ini` will be created based on the static IP addresses. I went the full dynamic route, only to get hit by some funky errors in the Proxmox terraform provider, which always used the same two VM IDs (for 8 nodes, doesn't help), and another annoying bug that forced me to got the static route until all this gets fixed.
 
